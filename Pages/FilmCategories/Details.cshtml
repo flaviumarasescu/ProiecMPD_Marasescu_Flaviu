@@ -1,0 +1,33 @@
+﻿@page
+@model ProiecMPD_Marasescu_Flaviu.Pages.FilmCategories.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>FilmCategory</h4>
+    <hr />
+    <dl class="row">
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FilmCategory.Film.FilmDirector)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FilmCategory.Film.FilmDirector)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FilmCategory.Category.CategoryName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FilmCategory.Category.CategoryName)
+        </dd>
+
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.FilmCategory.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

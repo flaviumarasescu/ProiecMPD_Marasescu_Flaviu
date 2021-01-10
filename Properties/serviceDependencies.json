@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "ProiecMPD_Marasescu_FlaviuContext"
+    }
+  }
+}
