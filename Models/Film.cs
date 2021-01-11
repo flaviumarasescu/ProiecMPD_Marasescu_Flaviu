@@ -15,7 +15,7 @@ namespace ProiecMPD_Marasescu_Flaviu.Models
         [Required, StringLength(150, MinimumLength = 2)]
         [Display(Name = "Film Title")]
         public string Title { get; set; }
-        [RegularExpression(@"^[A-Z][a-z]+\s[A-Z][a-z]+$", ErrorMessage = "Numele autorului trebuie sa fie de forma 'Prenume Nume'"), Required, StringLength(50,MinimumLength = 2)]
+        [RegularExpression(@"^[A-Z][a-z]+\s[A-Z][a-z]+$", ErrorMessage = "Numele directorului trebuie sa fie de forma 'Prenume Nume'"), Required, StringLength(50,MinimumLength = 2)]
         //^ marcheaza inceputul sirului de caractere
         //[A-Z][a-z]+ prenumele -litera mare urmata de oricate litere mici
         //\s spatiu

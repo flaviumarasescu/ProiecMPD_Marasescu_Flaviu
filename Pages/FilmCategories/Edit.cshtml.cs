@@ -43,13 +43,12 @@ namespace ProiecMPD_Marasescu_Flaviu.Pages.FilmCategories
                                                  select new
                                                  {
                                                      ID = s.ID,
-                                                     FilmDirector = s.Title + " by " + s.Director
+                                                     FilmDirector = s.Title + " directed by " + s.Director
                                                  }),
-                                              "ID",
-                                              "FilmDirector",
-                                              null);
-
-            ViewData["FilmID"] = new SelectList(_context.Film, "ID", "Director");
+                                                            "ID",
+                                                            "FilmDirector"
+                                                            );
+            ViewData["CategoryID"] = new SelectList(_context.Category, "ID", "CategoryName");
             return Page();
         }
 
